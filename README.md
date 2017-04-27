@@ -5,6 +5,8 @@ PHP Script which loads a certain flickr Photoset / Gallery in a Multicolumn Site
 
 ## Requirements
 Server running PHP Version 7.x
+flickr Account (to obtain an API Key)
+flickr API Key (<a href="https://www.flickr.com/services/apps/create/apply" target="_blank">get one here</a>)
 
 ## Used JS Frameworks
 - jQuery 3.x
@@ -32,7 +34,7 @@ Displays Additional Informations & Pastes Info direct on Page.
 Displays Connection Informations in a grey Box on Top of the Gallery.
 ### API Key
 #### String
-You need your own API Key to use the flickr API. You can get your flickr API Key <a href="" target="_blank">here</a> for free.
+You need your own API Key to use the flickr API. You can get your flickr API Key <a href="https://www.flickr.com/services/apps/create/apply" target="_blank">here</a> for free.
 ### Photoset ID
 #### String
 The ID of the desired Gallery you would like to show. You can find the Gallery / Photoset ID directly on flickr. Just copy the ID from the URL: .../149621562@N02/albums/<b>72157682900004326</b>. For example 72157682900004326 is the Gallery ID you can use.
