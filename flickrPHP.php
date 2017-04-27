@@ -33,8 +33,8 @@
 	// Global Parameters & Photoset Informations
 	$showdebug = false;
 	$showinfo = true;
-	$apikey = '';
-	$photosetID = '72157682900004326'; // Fox
+	$apikey = 'a1200b7adcda28d652f1583e57a3bd85';
+	$photosetID = '72157680841776090'; // Golf
 	$photoset_url = "";
 	$photoset_JSON_url = "";
 	$photoset_length = 0;
