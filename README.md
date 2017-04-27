@@ -4,9 +4,9 @@ PHP Script which loads a certain flickr Photoset / Gallery in a Multicolumn Site
 <a href="http://beta.nx-designs.ch/flickr/phpflickr/flickrPHP_large.php" target="_blank">Live Demo with more then 250 Images (Cached)</a>
 
 ## Requirements
-Server running PHP Version 7.x
-flickr Account (to obtain an API Key)
-flickr API Key (<a href="https://www.flickr.com/services/apps/create/apply" target="_blank">get one here</a>)
+- Server running PHP Version 7.x
+- flickr Account (to obtain an API Key)
+- flickr API Key (<a href="https://www.flickr.com/services/apps/create/apply" target="_blank">get one here</a>)
 
 ## Used JS Frameworks
 - jQuery 3.x
