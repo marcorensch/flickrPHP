@@ -28,7 +28,9 @@ PHP Script which loads a certain flickr Photoset / Gallery in a Multicolumn Site
 ## Settings
 ### showdebug
 #### true / false
-Displays Additional Informations & Pastes Info direct on Page.
+Displays Debug Informations.<br>
+Informations will be placed direct on the Page and into the console.<br>
+<a href="http://beta.nx-designs.ch/flickr/phpflickr/flickrPHP_debug.php" target="_blank">Demo with Debug Mode on</a>
 ### showinfo
 #### true / false
 Displays Connection Informations in a grey Box on Top of the Gallery.
