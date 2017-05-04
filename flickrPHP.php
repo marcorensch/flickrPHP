@@ -32,13 +32,13 @@
 	
 	// Global Parameters & Photoset Informations
 	$showdebug = false;
-	$showinfo = true;
-	$apikey = 'a1200b7adcda28d652f1583e57a3bd85';
-	$photosetID = '72157680841776090'; // Golf
-	$photoset_url = "";
-	$photoset_JSON_url = "";
+	$showinfo = false;
+	$apikey = 'YOUR API KEY';			// Get one here: (https://www.flickr.com/services/apps/create/apply)
+	$photosetID = '72157682900004326'; 	// Demo  (https://www.flickr.com/photos/149621562@N02/albums/72157682900004326)
+	$photoset_url = ""; 				// leave empty
+	$photoset_JSON_url = ""; 			// leave empty
 	$photoset_length = 0;
-	$photoset_title = "";
+	$photoset_title = ""; 				// leave empty
 	
 	include('helper.php');
 	
