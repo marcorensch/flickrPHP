@@ -18,20 +18,20 @@
 */
 	
 	// Global Parameters & Photoset Informations
-	$showheader = false;							// displays the black header on top 				 	
+	$showheader = true;								// displays the black header on top 				 	
 	$showdebug = false;								// shows debug informations on page						
-	$showinfo = false;								// shows grey infobox with API Key, Cache State, Photoset Informations on top
+	$showinfo = true;								// shows grey infobox with API Key, Cache State, Photoset Informations on top
 	$showtitle = true;								// Display Photoset Title
 	$loadjquery = true;								// should jQuery (3) been loaded by this script?
-	$framework = 'uikit'; 							// uikit || Bootstrap
+	$framework = 'Bootstrap'; 						// uikit || Bootstrap
 	$loadfrontendframework = true; 					// should grid-frameworks be loaded by this script?
 	$loadfancyBoxScript = true;						// load fancyBox 3 Script for PopUp?
 	$enablepopups = true; 							// select if popups with fancybox should be enabled
-	$columns = 4;									// choose desired amount of columns (for uikit = 1,2,3,4,5,6 for bootstrap = 1,2,3,4,6,12)
+	$columns = 12;									// choose desired amount of columns (for uikit = 1,2,3,4,5,6 for bootstrap = 1,2,3,4,6,12)
 	$thumbnailsize = 'q';							// s,q,t,m,n,z,c,b,h,k,o (depends on available image quality on flickr for this set)
-	$apikey = '';									// Enter here your API Key
-	// $photosetID = '72157680841776090'; 			// Demo Gallery Golf (250+ Images)
-	$photosetID = '72157682900004326'; 				// Demo Gallery Fox (6 Images)
+	$apikey = 'a1200b7adcda28d652f1583e57a3bd85';	// Enter here your API Key
+	$photosetID = '72157680841776090'; 			// Demo Gallery Golf (250+ Images)
+	// $photosetID = '72157682900004326'; 				// Demo Gallery Fox (6 Images)
 
 	$photoset_url = "";
 	$photoset_JSON_url = "";
@@ -122,7 +122,7 @@
 					}
 					
 					echo '<div class="nx-block '.$gridelement.'" id="nx-img_'.$i.'">';
-					echo '<a data-fancybox="group" data-caption="'.$imgtitle.'" href="'.$imglargeurl.'" target="_blank"><img title="'.$imgtitle.'" src="https://farm'.$farmID.'.staticflickr.com/'.$serverID.'/'.$imgID.'_'.$secret.'_'.$thumbnailsize.'.jpg" width="100%" /></a>';
+					echo '<a '.$lightbox.' data-caption="'.$imgtitle.'" href="'.$imglargeurl.'" target="_blank"><img title="'.$imgtitle.'" src="https://farm'.$farmID.'.staticflickr.com/'.$serverID.'/'.$imgID.'_'.$secret.'_'.$thumbnailsize.'.jpg" width="100%" /></a>';
 					echo '</div>';
 				}
 			?>
