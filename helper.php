@@ -111,47 +111,55 @@ function createCache($type,$ID,$apikey){
 
 function getZoomedIMG($imgDetails){
 	global $showdebug;
+	if($showdebug){
+		echo '<div class="uk-width-1-1"><br><hr><h3>Image Details</h3>';
+		print_r ($imgDetails->sizes->size);
+		echo '<br></div>';
+		echo '<div class="uk-width-1-1"><h4>Maximal Available Size</h4>';
+	}
 	if (in_array("Large 2048", array_column($imgDetails->sizes->size, 'label'))) {
 		if($showdebug){echo 'Large 2048 is available<br>';}
 
 		$key = array_search('Large 2048', array_column($imgDetails->sizes->size, 'label'));
-		if($showdebug){echo 'Large 2048 is available on position '.$key.'<br>';}
+		if($showdebug){echo 'Large 2048 is available on position '.$key.'<br></div>';}
 
 		$imglargeurl = $imgDetails->sizes->size[$key]->source;
 
-		if($showdebug){echo '<a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a>';}
+		if($showdebug){echo '<div class="uk-width-1-1"><h4>Large Image Link</h4><a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a></div>';}
 
 	}elseif(in_array("Large 1600", array_column($imgDetails->sizes->size, 'label'))){
 		if($showdebug){echo 'Large 1600 is available<br>';}
 
 		$key = array_search('Large 1600', array_column($imgDetails->sizes->size, 'label'));
-		if($showdebug){echo 'Large 1600 is available on position '.$key.'<br>';}
+		if($showdebug){echo 'Large 1600 is available on position '.$key.'<br></div>';}
 
 		$imglargeurl = $imgDetails->sizes->size[$key]->source;
 
-		if($showdebug){echo '<a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a>';}
+		if($showdebug){echo '<div class="uk-width-1-1"><h4>Large Image Link</h4><a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a></div>';}
 	}elseif(in_array("Large 1024", array_column($imgDetails->sizes->size, 'label'))){
 		if($showdebug){echo 'Large 1024 is available<br>';}
 
 		$key = array_search('Large 1024', array_column($imgDetails->sizes->size, 'label'));
-		if($showdebug){echo 'Large 1024 is available on position '.$key.'<br>';}
+		if($showdebug){echo 'Large 1024 is available on position '.$key.'<br></div>';}
 
 		$imglargeurl = $imgDetails->sizes->size[$key]->source;
 
-		if($showdebug){echo '<a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a>';}
+		if($showdebug){echo '<div class="uk-width-1-1"><h4>Large Image Link</h4><a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a></div>';}
 	}elseif(in_array("Original", array_column($imgDetails->sizes->size, 'label'))){
 		if($showdebug){echo 'Original is available<br>';}
 
 		$key = array_search('Original', array_column($imgDetails->sizes->size, 'label'));
-		if($showdebug){echo 'Original is available on position '.$key.'<br>';}
+		if($showdebug){echo 'Original is available on position '.$key.'<br></div>';}
 
 		$imglargeurl = $imgDetails->sizes->size[$key]->source;
 
-		if($showdebug){echo '<a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a>';}
+		if($showdebug){echo '<div class="uk-width-1-1"><h4>Large Image Link</h4><a href="'.$imglargeurl.'" target="_blank">'.$imglargeurl.'</a></div>';}
 	}else{
 		$imglargeurl = '';
+		if($showdebug){echo '<b>There where no large images available.</b></div>';}
 		if($showdebug){debug_to_console('There where no large images available');}
 	}
 	return $imglargeurl;
 }
+
 ?>
