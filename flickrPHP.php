@@ -26,6 +26,7 @@
 	$framework = 'Bootstrap'; 						// uikit || Bootstrap
 	$loadfrontendframework = true; 					// should grid-frameworks be loaded by this script?
 	$loadfancyBoxScript = true;						// load fancyBox 3 Script for PopUp?
+	$grouping = 'false';
 	$enablepopups = true; 							// select if popups with fancybox should be enabled
 	$columns = 12;									// choose desired amount of columns (for uikit = 1,2,3,4,5,6 for bootstrap = 1,2,3,4,6,12)
 	$thumbnailsize = 'q';							// s,q,t,m,n,z,c,b,h,k,o (depends on available image quality on flickr for this set)
