@@ -3,7 +3,7 @@
 
 	name:			flickr PHP Script
 	version:		1.1
-	Description:	flickr PHP Script
+	Description:	        flickr PHP Script
 	creator:		nx-designs | Marco Rensch
 	web:			http://www.nx-designs.ch
 	repository:		https://github.com/marcorensch/flickrPHP
@@ -18,21 +18,21 @@
 */
 	
 	// Global Parameters & Photoset Informations
-	$showheader = true;								// displays the black header on top 				 	
-	$showdebug = false;								// shows debug informations on page						
-	$showinfo = true;								// shows grey infobox with API Key, Cache State, Photoset Informations on top
-	$showtitle = true;								// Display Photoset Title
-	$loadjquery = true;								// should jQuery (3) been loaded by this script?
-	$framework = 'Bootstrap'; 						// uikit || Bootstrap
-	$loadfrontendframework = true; 					// should grid-frameworks be loaded by this script?
-	$loadfancyBoxScript = true;						// load fancyBox 3 Script for PopUp?
+	$showheader = true;				// displays the black header on top 				 	
+	$showdebug = false;				// shows debug informations on page						
+	$showinfo = true;				// shows grey infobox with API Key, Cache State, Photoset Informations on top
+	$showtitle = true;				// Display Photoset Title
+	$loadjquery = true;				// should jQuery (3) been loaded by this script?
+	$framework = 'Bootstrap'; 			// uikit || Bootstrap
+	$loadfrontendframework = true; 			// should grid-frameworks be loaded by this script?
+	$loadfancyBoxScript = true;			// load fancyBox 3 Script for PopUp?
 	$grouping = 'false';
-	$enablepopups = true; 							// select if popups with fancybox should be enabled
-	$columns = 12;									// choose desired amount of columns (for uikit = 1,2,3,4,5,6 for bootstrap = 1,2,3,4,6,12)
-	$thumbnailsize = 'q';							// s,q,t,m,n,z,c,b,h,k,o (depends on available image quality on flickr for this set)
+	$enablepopups = true; 				// select if popups with fancybox should be enabled
+	$columns = 12;					// choose desired amount of columns (for uikit = 1,2,3,4,5,6 for bootstrap = 1,2,3,4,6,12)
+	$thumbnailsize = 'q';				// s,q,t,m,n,z,c,b,h,k,o (depends on available image quality on flickr for this set)
 	$apikey = 'a1200b7adcda28d652f1583e57a3bd85';	// Enter here your API Key
-	$photosetID = '72157680841776090'; 			// Demo Gallery Golf (250+ Images)
-	// $photosetID = '72157682900004326'; 				// Demo Gallery Fox (6 Images)
+	$photosetID = '72157680841776090'; 		// Demo Gallery Golf (250+ Images)
+	// $photosetID = '72157682900004326'; 		// Demo Gallery Fox (6 Images)
 
 	$photoset_url = "";
 	$photoset_JSON_url = "";
